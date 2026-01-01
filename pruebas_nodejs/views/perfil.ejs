@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perfil de Usuario</title>
+</head>
+<body>
+    <h1>Hola, <%= nombre %>!</h1>
+    <p>Tu rol es: <strong><%= rol %></strong></p>
+
+    <h3>Tus habilidades:</h3>
+    <ul>
+        <% habilidades.forEach(function(item) { %>
+            <li><%= item %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>
